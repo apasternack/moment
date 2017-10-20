@@ -5,6 +5,18 @@ import isFunction from '../utils/is-function';
 hooks.defaultFormat = 'YYYY-MM-DDTHH:mm:ssZ';
 hooks.defaultFormatUtc = 'YYYY-MM-DDTHH:mm:ss[Z]';
 
+// HTML5 input format constants
+hooks.DATETIME_LOCAL = 'YYYY-MM-DDThh:mm';
+hooks.
+
+// moment.DATETIME_LOCAL_MILLIS = 'YYYY-MM-DDThh:mm:ss.SSS';
+// moment.DATE = 'YYYY-MM-DD';
+// moment.TIME_MINUTES = 'hh:mm';
+// moment.TIME_SECONDS = 'hh:mm:ss';
+// moment.TIME_MILLIS = 'hh:mm:ss.SSS';
+// moment.WEEK = 'YYYY-[W]WW';
+// moment.MONTH = 'YYYY-MM';
+
 export function toString () {
     return this.clone().locale('en').format('ddd MMM DD YYYY HH:mm:ss [GMT]ZZ');
 }
